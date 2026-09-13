@@ -1,0 +1,120 @@
+{
+  "theme": "light",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "design_philosophy": "Modern, clean, and highly functional. Emphasizing high contrast, large typography, and product-focused minimalist layouts. Taking inspiration from premium electronics brands. Minimal decorations, letting the product images stand out on subtle light gray backgrounds.",
+  "colors": {
+    "background": "#FFFFFF",
+    "foreground": "#000000",
+    "surface": "#F5F5F7",
+    "surface_hover": "#E8E8ED",
+    "primary": "#000000",
+    "primary_foreground": "#FFFFFF",
+    "accent": "#0071E3",
+    "accent_foreground": "#FFFFFF",
+    "border": "#E5E5E5",
+    "muted": "#86868B"
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "weights": ["400", "500", "600", "700", "800"],
+      "h1": "text-5xl sm:text-6xl tracking-tighter leading-none font-bold",
+      "h2": "text-3xl sm:text-4xl tracking-tight leading-tight font-semibold",
+      "h3": "text-2xl sm:text-3xl tracking-tight font-medium",
+      "h4": "text-xl font-medium"
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weights": ["400", "500", "600"],
+      "base": "text-base text-gray-800 leading-relaxed",
+      "small": "text-sm text-gray-500",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-gray-500"
+    }
+  },
+  "layout_and_spacing": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_spacing": "py-24 sm:py-32",
+    "gap_large": "gap-16",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6",
+    "product_grid": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8",
+    "card_padding": "p-8",
+    "border_radius": "rounded-3xl"
+  },
+  "components": {
+    "header": {
+      "style": "sticky top-0 z-50 backdrop-blur-xl bg-white/70 border-b border-black/5",
+      "logo": "font-bold text-2xl tracking-tighter text-black"
+    },
+    "buttons": {
+      "primary": "bg-black text-white hover:bg-neutral-800 rounded-full px-8 py-3 font-medium transition-all duration-300",
+      "secondary": "bg-[#F5F5F7] text-black hover:bg-[#E8E8ED] rounded-full px-8 py-3 font-medium transition-all duration-300",
+      "accent": "bg-[#0071E3] text-white hover:bg-[#005BB5] rounded-full px-8 py-3 font-medium transition-all duration-300"
+    },
+    "product_card": {
+      "container": "group bg-[#F5F5F7] rounded-3xl p-6 flex flex-col items-center text-center transition-transform hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "image_wrapper": "w-full aspect-square mb-6 overflow-hidden rounded-2xl flex items-center justify-center mix-blend-multiply",
+      "title": "text-lg font-semibold tracking-tight text-black mb-1",
+      "price": "text-base font-medium text-gray-600"
+    },
+    "inputs": {
+      "style": "bg-[#F5F5F7] border-transparent rounded-xl px-4 py-3 focus:ring-2 focus:ring-black focus:bg-white transition-all w-full"
+    },
+    "badges": {
+      "style": "inline-block bg-black text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full"
+    }
+  },
+  "animations": {
+    "hover_state": "transition-all duration-300 ease-out",
+    "page_load": "Use framer-motion for fade-in and slide-up with 0.4s duration and 0.1s stagger for lists",
+    "image_hover": "scale-105 transition-transform duration-500 ease-out"
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/5474290/pexels-photo-5474290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Minimalist hands opening a sleek laptop, bright and modern.",
+      "category": "hero"
+    },
+    "abstract_accent": {
+      "url": "https://images.pexels.com/photos/15578085/pexels-photo-15578085.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Smooth fluid white wave abstract background for modern sections.",
+      "category": "background"
+    },
+    "products": [
+      {
+        "url": "https://images.unsplash.com/photo-1640551497504-ec05b9e50b50?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwxfHxsYXB0b3AlMjBtaW5pbWFsaXN0JTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3NzA4OTUwNXww&ixlib=rb-4.1.0&q=85",
+        "description": "Close up of a minimalist laptop on white surface",
+        "category": "product_laptop"
+      },
+      {
+        "url": "https://images.pexels.com/photos/30428610/pexels-photo-30428610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Classic black studio headphones on a minimalist white backdrop",
+        "category": "product_headphones"
+      },
+      {
+        "url": "https://images.pexels.com/photos/10703306/pexels-photo-10703306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Smartwatch and wireless earbuds flat lay",
+        "category": "product_wearables"
+      }
+    ],
+    "logos": [
+      {
+        "url": "https://images.pexels.com/photos/15863044/pexels-photo-15863044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Minimalist tech logo presentation",
+        "category": "brand_logo"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use standard semantic HTML elements wrapped in Tailwind CSS classes. Avoid arbitrary Shadcn components for marketing sections; use Shadcn primarily for forms, dialogs, dropdowns, and admin tables.",
+    "Implement the Bento Grid ('Tetris Grid' pattern) for the homepage hero and featured category sections. Mix tall, wide, and square cells to create an engaging asymmetry.",
+    "Ensure all product cards have a subtle gray background (#F5F5F7) with the image taking up prominent space. Never use generic borders on product cards, rely on the background color for structure.",
+    "Use framer-motion for page transitions and staggering lists (like the product grid). Wrap grid items properly to avoid breaking CSS grid.",
+    "For the header, implement Glassmorphism (backdrop-blur-xl bg-white/70) and ensure it stays sticky. Do NOT use a fully transparent header.",
+    "All headings MUST use the 'Outfit' font family. Add it via Google Fonts. All body text uses 'Manrope'.",
+    "Never use pure white (#FFFFFF) against pure white. Delineate sections using the very light gray (#F5F5F7).",
+    "For buttons, stick to stark Black & White contrast or the Accent Blue (#0071E3) for primary purchase actions.",
+    "Admin panel should follow a denser layout (Mode B: Control Room Grid) with high data density, utilizing Shadcn tables and tighter spacing (gap-4).",
+    "Always include data-testid attributes (kebab-case) for interactive elements to ensure testability.",
+    "Load @phosphor-icons/react or lucide-react for a premium iconography aesthetic."
+  ]
+}
